@@ -52,17 +52,17 @@ public class RecommendController {
 
     //http://localhost:8080/getRecommendProject?longitude=12&latitude=34
     @GetMapping("/getRecommendProject")
-    public String getRecommendProject(@RequestParam(value = "skinColor",defaultValue="") String skinColor) throws IOException {
-        System.out.println(skinColor);
+    public String getRecommendProject(@RequestParam(value = "skinColor",defaultValue="") String skinColor, @RequestParam(value = "uv",defaultValue="") Integer uv) throws IOException {
+        System.out.println(skinColor + " " + uv);
         if(skinColor.length() < 2){
             return "please input the skin tones";
         }
-        //http://127.0.0.1:8080/getRecommendProject?skinColor=xxx
-        //todo-调用api 获取紫外线 uv(api)
+        System.out.println(skinColor);
+        //todo-调用api 获取紫外线 uv
 //        String url = "http://localhost:8080/getTime?skinColor=1&hairColor=2&eyeColor=3";
 //        String res = HttpClientHelper.sendGet(url);
 //        System.out.println("Res" + res);
-        int uv = 2; //uv值
+        //int uv = 2; //uv值
         //todo-uv 查数据库 获取推荐内容
         int type = 0;
         if(uv >=0 && uv <=2){
@@ -71,7 +71,7 @@ public class RecommendController {
             type = 1;
         }else if(uv >=6 && uv <=7){
             type = 2;
-        } else if(uv >=8 && uv <=11){
+        }else if(uv >=8 && uv <=11){
             type = 3;
         }else if(uv >11){
             type = 4;
