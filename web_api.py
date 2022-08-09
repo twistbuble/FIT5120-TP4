@@ -57,15 +57,13 @@ def get_current_season():
   else:
     return "Spring"
 
-def get_current_city_name(lat, lng):
+def get_current_loc(lat, lng):
   geolocator = Nominatim(user_agent = "geoapiExercises")
   location = geolocator.reverse(lat + "," + lng)
   if location == None:
     return "unknown area"
   else:
-    address = location.raw['address']
-    city = address.get('city', '')
-    return city
+    return location.raw['address']
   
 
 async def get_current_uv_related_info(lat, lng, alt, info_type):
@@ -124,12 +122,22 @@ def current_uv():
     res = asyncio.run(get_current_uv_related_info(lat, lng, alt, "current_uv"))
     database = db("./sun_safe_DB.db")
     database.sqlite_db_insert("insert into Log (user_id, query_type, query_data, query_time) values ('%s', '%s', '%s', '%s')" % ("1", "current_uv" ,base64.b64encode(str(res).encode("utf-8")).decode('utf-8'), time.time()))
-    avg_uv = database.sqlite_db_fetch("select avg_uv_index from Avg where season=\'" + get_current_season() + "\'" + " and region=\'" + get_current_city_name(lat, lng) + "\'")
-    if len(avg_uv) != 0:
-      res["average_uv"] = avg_uv[0][0]
-    else:
+    
+    current_serson = get_current_season()
+    current_loc = get_current_loc(lat, lng)
+    res["current_season"] = current_serson
+    res["current_loc"] = current_loc
+    print(current_loc)
+    if current_loc == "unknown area":
       res["average_uv"] = "no record of this area."
-    return str(res).encode("utf-8")
+      return str(res).encode("utf-8")
+    else:
+      avg_uv = database.sqlite_db_fetch("select avg_uv_index from Avg where season=\'" + current_serson + "\'" + " and region=\'" + current_loc.get('city', '') + "\'")
+      if len(avg_uv) != 0:
+        res["average_uv"] = avg_uv[0][0]
+      else:
+        res["average_uv"] = "no record of this area."
+      return str(res).encode("utf-8")
 
 @app.route('/api/get_forecasted_uv_info', methods=['POST'])
 def forecasted_uv():
