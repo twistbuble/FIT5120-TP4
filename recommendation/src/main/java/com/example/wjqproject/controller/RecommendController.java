@@ -86,7 +86,7 @@ public class RecommendController {
             }
         }
 
-        String resultTime = types[skin_type].split("\n")[3];
+        String resultTime = types[skin_type].split("\n")[1];
         String content = resultTime + '\n' + arr[type];
         return content;
     }
