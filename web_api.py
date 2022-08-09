@@ -67,7 +67,8 @@ def get_current_loc(lat, lng):
   
 
 async def get_current_uv_related_info(lat, lng, alt, info_type):
-    api_token = "758a878160e1859067e33fb54d8a9797"
+    # api_token = "758a878160e1859067e33fb54d8a9797"
+    api_token = "f5c11e97c81812ae4b051ea31f96c4d4"
     async with ClientSession() as session:
         client = Client(
             api_token,
@@ -122,7 +123,6 @@ def current_uv():
     res = asyncio.run(get_current_uv_related_info(lat, lng, alt, "current_uv"))
     database = db("./sun_safe_DB.db")
     database.sqlite_db_insert("insert into Log (user_id, query_type, query_data, query_time) values ('%s', '%s', '%s', '%s')" % ("1", "current_uv" ,base64.b64encode(str(res).encode("utf-8")).decode('utf-8'), time.time()))
-    
     current_serson = get_current_season()
     current_loc = get_current_loc(lat, lng)
     res["current_season"] = current_serson
