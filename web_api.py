@@ -127,7 +127,6 @@ def current_uv():
     current_loc = get_current_loc(lat, lng)
     res["current_season"] = current_serson
     res["current_loc"] = current_loc
-    print(current_loc)
     if current_loc == "unknown area":
       res["average_uv"] = "no record of this area."
       return str(res).encode("utf-8")
