@@ -123,19 +123,23 @@ def current_uv():
     res = asyncio.run(get_current_uv_related_info(lat, lng, alt, "current_uv"))
     database = db("./sun_safe_DB.db")
     database.sqlite_db_insert("insert into Log (user_id, query_type, query_data, query_time) values ('%s', '%s', '%s', '%s')" % ("1", "current_uv" ,base64.b64encode(str(res).encode("utf-8")).decode('utf-8'), time.time()))
-    current_serson = get_current_season()
+    current_season = get_current_season()
     current_loc = get_current_loc(lat, lng)
-    res["current_season"] = current_serson
+    current_hour = time.localtime().tm_hour
+    res["current_season"] = current_season
     res["current_loc"] = current_loc
     if current_loc == "unknown area":
       res["average_uv"] = "no record of this area."
       return str(res).encode("utf-8")
     else:
-      avg_uv = database.sqlite_db_fetch("select avg_uv_index from Avg where season=\'" + current_serson + "\'" + " and region=\'" + current_loc.get('city', '') + "\'")
-      if len(avg_uv) != 0:
+      avg_uv = database.sqlite_db_fetch("select avg_uv_index from uv_avg_season where season=\'" + current_season + "\'" + " and region=\'" + current_loc.get('city', '') + "\'")
+      avg_uv_of_hours = database.sqlite_db_fetch("select avg_uv_index from uv_avg_season_time where season=\'" + current_season + "\'" + " and region=\'" + current_loc.get('city', '') + "\'" + "and hour_of_day=\'" + str(current_hour) + "\'")
+      if len(avg_uv) != 0 or len(avg_uv_of_hours) != 0:
         res["average_uv"] = avg_uv[0][0]
+        res["average_uv_of_current_time"] = avg_uv_of_hours[0][0]
       else:
         res["average_uv"] = "no record of this area."
+        res["average_uv_of_current_time"] = "no record of this area."
       return str(res).encode("utf-8")
 
 @app.route('/api/get_forecasted_uv_info', methods=['POST'])
