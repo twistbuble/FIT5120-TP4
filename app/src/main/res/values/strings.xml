@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SunSafe</string>
+
+    <string name="error">Something Went Wrong / Network issue.</string>
+
+    <string name="choose_skin_colour_type"><u>Choose your skin colour type to get specific recommendation</u></string>
+    <string name="selected_choose_skin_colour_type"><u>Your skin colour type specific recommendation</u></string>
+    <string name="recommended_products"><u>Recommended products</u></string>
+    <string name="handbook">Australia has some of the highest UV radiation levels in the world, with overexposure to UV being the main cause of skin cancer. UV Index levels range from 1-11+, with levels as low as 3 able to cause sunburn. To avoid damage from the sun, we should always remember Slip, Slop, Slap, Seek, Slide!
+Slip on Clothing – clothing offers the best form of sun protection
+Slop on Sunscreen – where clothing can’t be used, sunscreen should be applied
+Slap on a Hat – Hats with a wide brim protect your face, ears, neck, and nose
+Seek Shade – Stand in the shade where possible to avoid prolonged exposure
+Slide on Sunglasses – Sunglasses offer valuable eye protection from UV rays</string>
+    <string name="effective_protection"><b>Which sunscreen do I use?</b> \n
+With many different sunscreens on the market, it can be difficult to choose the correct sunscreen. In general, any product with a sun protection factor of 30+ will provide sufficient protection against the sun. Choosing a sunscreen that is easy to reapply, suits your skin type and offers water resistance if necessary is recommended to ensure you remain well-protected during your time outdoors.
+\n\n
+        <b>How much sunscreen do I need?</b>\n
+The amount of sunscreen you need depends on your size and the amount of clothing you’re wearing. As a general guide, when wearing a t-shirt and shorts, you should be applying a minimum of 3-4 teaspoons of sunscreen (approximately 15ml-20ml) every 2 hours. However no sunscreen offers complete protection, so clothing should be used as a first priority against the sun, with sunscreen on the areas that cannot be covered.
+</string>
+</resources>
