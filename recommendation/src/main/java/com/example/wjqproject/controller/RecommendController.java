@@ -1,6 +1,7 @@
 package com.example.wjqproject.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import java.io.IOException;
@@ -49,11 +50,27 @@ public class RecommendController {
             "Watch out for bright surfaces, like sand, water and snow, which reflect UV and increase exposure.";
     String[] arr = {recommendation1, recommendation2, recommendation3, recommendation4, recommendation5};
 
+    int uvType = 0;
+    @PostMapping("/getUV")
+    public String getUV(@RequestParam(value = "uv",defaultValue="") Integer uv){
 
+        System.out.println( "UV=" + uv);
+        int type = 0;
+        if(uv >=0 && uv <=2){
+            type = 0;
+        }else if(uv >=3 && uv <=5){
+            type = 1;
+        }else if(uv >=6 && uv <=7){
+            type = 2;
+        }
+        uvType = type;
+        return "Set up the success";
+
+    }
     //http://localhost:8080/getRecommendProject?longitude=12&latitude=34
     @GetMapping("/getRecommendProject")
-    public String getRecommendProject(@RequestParam(value = "skinColor",defaultValue="") String skinColor, @RequestParam(value = "uv",defaultValue="") Integer uv) throws IOException {
-        System.out.println(skinColor + " " + uv);
+    public String getRecommendProject(@RequestParam(value = "skinColor",defaultValue="") String skinColor) throws IOException {
+        System.out.println( "skinColor=" + skinColor);
         if(skinColor.length() < 2){
             return "please input the skin tones";
         }
@@ -64,19 +81,14 @@ public class RecommendController {
 //        System.out.println("Res" + res);
         //int uv = 2; //uv值
         //todo-uv 查数据库 获取推荐内容
-        int type = 0;
-        if(uv >=0 && uv <=2){
-            type = 0;
-        }else if(uv >=3 && uv <=5){
-            type = 1;
-        }else if(uv >=6 && uv <=7){
-            type = 2;
-        }else if(uv >=8 && uv <=11){
-            type = 3;
-        }else if(uv >11){
-            type = 4;
-        }
-
+//        int type = 0;
+//        if(uv >=0 && uv <=2){
+//            type = 0;
+//        }else if(uv >=3 && uv <=5){
+//            type = 1;
+//        }else if(uv >=6 && uv <=7){
+//            type = 2;
+//        }
         //step3根据skinColor获取建议
         int skin_type = 0;
         for (int i = 0; i < types.length; i++) {
@@ -85,9 +97,8 @@ public class RecommendController {
                 skin_type = i;
             }
         }
-
         String resultTime = types[skin_type].split("\n")[1];
-        String content = resultTime + '\n' + arr[type];
+        String content = resultTime + '\n' + arr[uvType];
         return content;
     }
 }
