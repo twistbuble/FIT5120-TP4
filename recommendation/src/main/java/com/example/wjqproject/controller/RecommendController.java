@@ -62,6 +62,10 @@ public class RecommendController {
             type = 1;
         }else if(uv >=6 && uv <=7){
             type = 2;
+        }if(uv >=8 && uv <=10){
+            type = 3;
+        }else if(uv >=11 ){
+            type = 4;
         }
         uvType = type;
         return "Set up the success";
