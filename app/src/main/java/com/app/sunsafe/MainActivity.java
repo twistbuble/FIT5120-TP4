@@ -45,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
     private SwipeRefreshLayout swipeRefreshLayout;
 
+    private double currentUVValue = 0;
+
     private double uvi = 0;
 
     @Override
@@ -207,7 +209,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
                 recommendedProductsHeading.setVisibility(View.VISIBLE);
 
-
+                displayTextRecommendation(currentUVValue, 1);
 
             }
         });
@@ -334,6 +336,156 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
     }
 
+    private void displayTextRecommendation(double currentUVValue, int skinColourType) {
+
+        if(skinColourType == 1){
+
+            if(currentUVValue < 3){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue >= 3 && currentUVValue < 6){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue >= 6 && currentUVValue < 8){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue >= 8 && currentUVValue < 11){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue > 11){
+
+
+
+            }
+
+        }else if(skinColourType == 2){
+
+            if(currentUVValue < 3){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue >= 3 && currentUVValue < 6){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue >= 6 && currentUVValue < 8){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue >= 8 && currentUVValue < 11){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue > 11){
+
+                textRecommendation.setText("");
+
+            }
+
+        }else if(skinColourType == 3){
+
+            if(currentUVValue < 3){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue >= 3 && currentUVValue < 6){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue >= 6 && currentUVValue < 8){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue >= 8 && currentUVValue < 11){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue > 11){
+
+                textRecommendation.setText("");
+
+            }
+
+        }else if(skinColourType == 4){
+
+            if(currentUVValue < 3){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue >= 3 && currentUVValue < 6){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue >= 6 && currentUVValue < 8){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue >= 8 && currentUVValue < 11){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue > 11){
+
+                textRecommendation.setText("");
+
+            }
+
+        }else if(skinColourType == 5){
+
+            if(currentUVValue < 3){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue >= 3 && currentUVValue < 6){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue >= 6 && currentUVValue < 8){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue >= 8 && currentUVValue < 11){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue > 11){
+
+                textRecommendation.setText("");
+
+            }
+
+        }if(skinColourType == 6){
+
+            if(currentUVValue < 3){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue >= 3 && currentUVValue < 6){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue >= 6 && currentUVValue < 8){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue >= 8 && currentUVValue < 11){
+
+                textRecommendation.setText("");
+
+            }else if(currentUVValue > 11){
+
+                textRecommendation.setText("");
+
+            }
+
+        }
+
+    }
+
     public void checkLocationPermission() {
         if (ContextCompat.checkSelfPermission(getApplicationContext(),
                 android.Manifest.permission.ACCESS_FINE_LOCATION)
@@ -396,13 +548,41 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
                 try{
 
+                    currentUVValue = Double.parseDouble(response.getResult().getUv());
+
                     currentLocation.setText(response.getCurrentLocation().getSuburb() + ", " + response.getCurrentLocation().getState());
 
                     currentSeason.setText(response.getCurrentSeason());
-                    seasonAvgUVI.setText(response.getAverageUV());
 
-                    currentUVI.setText(response.getResult().getUv());
-                    maxUVI.setText(response.getResult().getUvMax());
+                    try{
+
+                        seasonAvgUVI.setText(response.getAverageUV().substring(0,3));
+
+                    }catch (Exception e){
+
+                        seasonAvgUVI.setText(response.getAverageUV());
+
+                    }
+
+                    try{
+
+                        currentUVI.setText(response.getResult().getUv().substring(0,3));
+
+                    }catch (Exception e){
+
+                        currentUVI.setText(response.getResult().getUv());
+
+                    }
+
+                    try{
+
+                        maxUVI.setText(response.getResult().getUvMax().substring(0,3));
+
+                    }catch (Exception e){
+
+                        maxUVI.setText(response.getResult().getUvMax());
+
+                    }
 
                     String inputValue = response.getResult().getUvMaxTime();
                     Instant timestamp = Instant.parse(inputValue);
