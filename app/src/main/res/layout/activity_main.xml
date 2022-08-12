@@ -25,53 +25,55 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="325dp">
+                    android:layout_height="350dp">
+
+                    <RelativeLayout
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="@drawable/circle_green"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="25dp"
+                        android:padding="10dp"
+                        android:id="@+id/rl_handbook">
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/icon_guide_white">
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="@drawable/circle_green"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:id="@+id/rl_effective_sun_protection">
+
+                        <RelativeLayout
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/icon_lotion_white">
+                        </RelativeLayout>
+
+                    </RelativeLayout>
 
                     <RelativeLayout
                         android:layout_width="300dp"
                         android:layout_height="300dp"
-                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
                         android:id="@+id/rl_current_uv"
                         android:elevation="5dp"
                         android:background="@drawable/circle_green">
-
-                        <RelativeLayout
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/circle_green"
-                            android:layout_alignParentBottom="true"
-                            android:layout_alignParentLeft="true"
-                            android:layout_marginLeft="50dp"
-                            android:layout_marginTop="25dp"
-                            android:padding="10dp"
-                            android:id="@+id/rl_handbook">
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/icon_guide_white">
-                            </RelativeLayout>
-
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/circle_green"
-                            android:layout_alignParentBottom="true"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginRight="50dp"
-                            android:layout_marginTop="10dp"
-                            android:padding="10dp"
-                            android:id="@+id/rl_effective_sun_protection">
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/icon_lotion_white">
-                            </RelativeLayout>
-
-                        </RelativeLayout>
 
                         <RelativeLayout
                             android:layout_width="50dp"
@@ -176,7 +178,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -305,6 +307,8 @@
 
                 </LinearLayout>
 
+
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -332,97 +336,111 @@
 
                 </RelativeLayout>
 
-                <LinearLayout
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
+                    android:padding="5dp">
 
                     <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:padding="5dp"
-                        android:id="@+id/rl_skin_type_one">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/icon_extremely_fair"/>
-
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rectangle_yellow_transparent"
+                        android:alpha="0.5">
                     </RelativeLayout>
 
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:padding="5dp"
-                        android:id="@+id/rl_skin_type_two">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
-                        <ImageView
+                        <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/icon_fair"/>
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:id="@+id/rl_skin_type_one">
 
-                    </RelativeLayout>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_extremely_fair"/>
 
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:padding="5dp"
-                        android:id="@+id/rl_skin_type_three">
+                        </RelativeLayout>
 
-                        <ImageView
+                        <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/icon_medium"/>
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:id="@+id/rl_skin_type_two">
 
-                    </RelativeLayout>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_fair"/>
 
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:padding="5dp"
-                        android:id="@+id/rl_skin_type_four">
+                        </RelativeLayout>
 
-                        <ImageView
+                        <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/icon_olive"/>
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:id="@+id/rl_skin_type_three">
 
-                    </RelativeLayout>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_medium"/>
 
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:padding="5dp"
-                        android:id="@+id/rl_skin_type_five">
+                        </RelativeLayout>
 
-                        <ImageView
+                        <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/icon_moderate_brown"/>
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:id="@+id/rl_skin_type_four">
 
-                    </RelativeLayout>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_olive"/>
 
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:padding="5dp"
-                        android:id="@+id/rl_skin_type_six">
+                        </RelativeLayout>
 
-                        <ImageView
+                        <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/icon_dark"/>
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:id="@+id/rl_skin_type_five">
 
-                    </RelativeLayout>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_moderate_brown"/>
 
-                </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:id="@+id/rl_skin_type_six">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_dark"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
 
                 <TextView
                     android:layout_width="match_parent"

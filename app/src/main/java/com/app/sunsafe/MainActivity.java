@@ -100,6 +100,8 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
                 dialog.setContentView(R.layout.dialog_handbook);
 
+                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+
                 Button ok = dialog.findViewById(R.id.btn_ok);
 
                 ok.setOnClickListener(new View.OnClickListener() {
@@ -123,6 +125,8 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
                 final Dialog dialog = new Dialog(MainActivity.this);
 
                 dialog.setContentView(R.layout.dialog_effective_protection);
+
+                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 
                 Button ok = dialog.findViewById(R.id.btn_ok);
 
@@ -148,6 +152,8 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
                 dialog.setContentView(R.layout.dialog_uvi_colour_type);
 
+                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+
                 Button ok = dialog.findViewById(R.id.btn_ok);
 
                 ok.setOnClickListener(new View.OnClickListener() {
@@ -171,6 +177,8 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
                 final Dialog dialog = new Dialog(MainActivity.this);
 
                 dialog.setContentView(R.layout.dialog_skin_colour_type);
+
+                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 
                 Button ok = dialog.findViewById(R.id.btn_ok);
 
