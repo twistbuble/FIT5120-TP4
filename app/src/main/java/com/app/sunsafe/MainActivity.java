@@ -235,6 +235,8 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
                 recommendedProductsHeading.setVisibility(View.VISIBLE);
 
+                displayTextRecommendation(currentUVValue, 2);
+
             }
         });
 
@@ -258,6 +260,8 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
                 recommendedProducts.setVisibility(View.VISIBLE);
 
                 recommendedProductsHeading.setVisibility(View.VISIBLE);
+
+                displayTextRecommendation(currentUVValue, 3);
 
             }
         });
@@ -283,6 +287,8 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
                 recommendedProductsHeading.setVisibility(View.VISIBLE);
 
+                displayTextRecommendation(currentUVValue, 4);
+
             }
         });
 
@@ -306,6 +312,8 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
                 recommendedProducts.setVisibility(View.VISIBLE);
 
                 recommendedProductsHeading.setVisibility(View.VISIBLE);
+
+                displayTextRecommendation(currentUVValue, 5);
 
             }
         });
@@ -331,6 +339,8 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
                 recommendedProductsHeading.setVisibility(View.VISIBLE);
 
+                displayTextRecommendation(currentUVValue, 6);
+
             }
         });
 
@@ -338,151 +348,71 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
     private void displayTextRecommendation(double currentUVValue, int skinColourType) {
 
-        if(skinColourType == 1){
+        String textRecommendationStr = "";
 
-            if(currentUVValue < 3){
+        if(skinColourType == 1) {
 
-                textRecommendation.setText("");
+            textRecommendationStr += "UV radiation leads to sunburn within 10 minutes, skin doesn't tan. \n";
 
-            }else if(currentUVValue >= 3 && currentUVValue < 6){
+        }else if(skinColourType == 2) {
 
-                textRecommendation.setText("");
+            textRecommendationStr += "UV radiation leads to sunburn within 20 minutes, skin hardly tans or tans only moderately. \n";
 
-            }else if(currentUVValue >= 6 && currentUVValue < 8){
+        }else if(skinColourType == 3) {
 
-                textRecommendation.setText("");
+            textRecommendationStr += "UV radiation leads to sunburn within 30 minutes, skin tans easily. \n";
 
-            }else if(currentUVValue >= 8 && currentUVValue < 11){
+        }else if(skinColourType == 4) {
 
-                textRecommendation.setText("");
+            textRecommendationStr += "UV radiation leads to sunburn within 50 minutes, skin soon becomes deeply tanned. \n";
 
-            }else if(currentUVValue > 11){
+        }else if(skinColourType == 5) {
 
+            textRecommendationStr += "UV radiation only leads to sunburn after more than 60 minutes, skin doesn't become darker. \n";
 
+        }else if(skinColourType == 6) {
 
-            }
-
-        }else if(skinColourType == 2){
-
-            if(currentUVValue < 3){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue >= 3 && currentUVValue < 6){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue >= 6 && currentUVValue < 8){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue >= 8 && currentUVValue < 11){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue > 11){
-
-                textRecommendation.setText("");
-
-            }
-
-        }else if(skinColourType == 3){
-
-            if(currentUVValue < 3){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue >= 3 && currentUVValue < 6){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue >= 6 && currentUVValue < 8){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue >= 8 && currentUVValue < 11){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue > 11){
-
-                textRecommendation.setText("");
-
-            }
-
-        }else if(skinColourType == 4){
-
-            if(currentUVValue < 3){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue >= 3 && currentUVValue < 6){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue >= 6 && currentUVValue < 8){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue >= 8 && currentUVValue < 11){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue > 11){
-
-                textRecommendation.setText("");
-
-            }
-
-        }else if(skinColourType == 5){
-
-            if(currentUVValue < 3){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue >= 3 && currentUVValue < 6){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue >= 6 && currentUVValue < 8){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue >= 8 && currentUVValue < 11){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue > 11){
-
-                textRecommendation.setText("");
-
-            }
-
-        }if(skinColourType == 6){
-
-            if(currentUVValue < 3){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue >= 3 && currentUVValue < 6){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue >= 6 && currentUVValue < 8){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue >= 8 && currentUVValue < 11){
-
-                textRecommendation.setText("");
-
-            }else if(currentUVValue > 11){
-
-                textRecommendation.setText("");
-
-            }
+            textRecommendationStr += "UV radiation only leads to sunburn after more than 60 minutes, skin doesn't become darker. \n";
 
         }
+
+        if(currentUVValue < 3){
+
+            textRecommendationStr += "Wear sunglasses on bright days.\n" +
+                    "If you burn easily, cover up and use broad spectrum SPF 30+ sunscreen.\n" +
+                    "Watch out for bright surfaces, like sand, water and snow, which reflect UV and increase exposure.";
+
+        }else if(currentUVValue >= 3 && currentUVValue < 6){
+
+            textRecommendationStr += "Stay in shade near midday when the sun is strongest.\n" +
+                    "If outdoors, wear protective clothing, a wide-brimmed hat, and UV-blocking sunglasses.\n" +
+                    "Generously apply broad spectrum SPF 30+ sunscreen every 2 hours, even on cloudy days, and after swimming or sweating. \n" +
+                    "Watch out for bright surfaces, like sand, water and snow, which reflect UV and increase exposure.";
+
+        }else if(currentUVValue >= 6 && currentUVValue < 8){
+
+            textRecommendationStr += "Reduce time in the sun between 10 a.m. and 4 p.m.\n" +
+                    "If outdoors, seek shade and wear protective clothing, a wide-brimmed hat, and UV-blocking sunglasses.\n" +
+                    "Generously apply broad spectrum SPF 30+ sunscreen every 2 hours, even on cloudy days, and after swimming or sweating. \n" +
+                    "Watch out for bright surfaces, like sand, water and snow, which reflect UV and increase exposure.";
+
+        }else if(currentUVValue >= 8 && currentUVValue < 11){
+
+            textRecommendationStr += "Minimize sun exposure between 10 a.m. and 4 p.m.\n" +
+                    "If outdoors, seek shade and wear protective clothing, a wide-brimmed hat, and UV-blocking sunglasses.\n" +
+                    "Generously apply broad spectrum SPF 30+ sunscreen every 2 hours, even on cloudy days, and after swimming or sweating. \n" +
+                    "Watch out for bright surfaces, like sand, water and snow, which reflect UV and increase exposure.";
+
+        }else if(currentUVValue > 11){
+
+            textRecommendationStr += "Try to avoid sun exposure between 10 a.m. and 4 p.m.\n" +
+                    "If outdoors, seek shade and wear protective clothing, a wide-brimmed hat, and UV-blocking sunglasses.\n" +
+                    "Generously apply broad spectrum SPF 30+ sunscreen every 2 hours, even on cloudy days, and after swimming or sweating.\n" +
+                    "Watch out for bright surfaces, like sand, water and snow, which reflect UV and increase exposure.";
+
+        }
+
+        textRecommendation.setText(textRecommendationStr);
 
     }
 

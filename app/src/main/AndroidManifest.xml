@@ -16,6 +16,7 @@
         android:roundIcon="@drawable/app_icon"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
+        android:testOnly="false"
         android:theme="@style/Theme.Design.Light.NoActionBar">
         <activity android:name=".RequestLocationPermissionActivity"></activity>
         <activity
