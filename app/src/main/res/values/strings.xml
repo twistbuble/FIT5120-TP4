@@ -8,4 +8,10 @@
     <string name="string_sign_up">Sign Up</string>
     <string name="sign_up">Sign up</string>
     <string name="string_app_name">APP NAME</string>
+    <string name="string_profile">My Profile</string>
+    <string name="string_add_photo">Add Photo</string>
+    <string name="string_heidi">Heidi</string>
+    <string name="string_kids">Kids</string>
+    <string name="string_oliver">Oliver</string>
+    <string name="string_vivian">Vivian</string>
 </resources>
