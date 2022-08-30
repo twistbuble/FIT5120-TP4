@@ -14,4 +14,10 @@
     <string name="string_kids">Kids</string>
     <string name="string_oliver">Oliver</string>
     <string name="string_vivian">Vivian</string>
+    <string name="string_create_account">Create Account</string>
+    <string name="string_create_acc_name">Name</string>
+    <string name="string_create_acc_email">Email</string>
+    <string name="string_create_acc_password">Password</string>
+    <string name="string_create_acc_confirm_pass">Confirm Password</string>
+    <string name="string_confirm">Confirm</string>
 </resources>

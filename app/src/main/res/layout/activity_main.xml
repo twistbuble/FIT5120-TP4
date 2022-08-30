@@ -55,7 +55,7 @@
                     android:src="@drawable/mail_icon"/>
 
                 <EditText
-                    android:id="@+id/et_email_input"
+                    android:id="@+id/et_sign_in_email_input"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="10dp"
@@ -89,7 +89,7 @@
                     android:src="@drawable/padlock_icon"/>
 
                 <EditText
-                    android:id="@+id/et_password_input"
+                    android:id="@+id/et_sign_in_password_input"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="10dp"
