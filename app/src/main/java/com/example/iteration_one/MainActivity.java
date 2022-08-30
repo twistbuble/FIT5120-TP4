@@ -7,6 +7,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,9 +15,10 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText signInEmail, signInPassword, createAccName, createAccEmail, createAccPass, createAccConfirmPass;
     private RelativeLayout anonLogIn, gmailLogin, facebookLogin;
-    private LinearLayout signIn, kidOne, kidTwo, confirmCreateAcc;
+    private LinearLayout signIn, kidOne, kidTwo, confirmCreateAcc, mealOne, mealTwo, mealThree;
     private TextView forgotPassword, signUp;
-    private ImageView addPic, addKid;
+    private ImageView addPic, addKid, addFood;
+    private Spinner dateSpinner;
 
 
 
@@ -43,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
         kidTwo = findViewById(R.id.ll_kid_two);
         signIn = findViewById(R.id.ll_sign_in);
         confirmCreateAcc = findViewById(R.id.ll_confirm_create_acc);
+        mealOne = findViewById(R.id.ll_meal_one);
+        mealTwo = findViewById(R.id.ll_meal_two);
+        mealThree = findViewById(R.id.ll_meal_three);
 
         // TextView
         forgotPassword = findViewById(R.id.tv_forgot_password);
@@ -52,5 +57,7 @@ public class MainActivity extends AppCompatActivity {
         addPic = findViewById(R.id.iv_camera);
         addKid = findViewById(R.id.iv_add_kid);
 
+        // Spinner
+        dateSpinner = findViewById(R.id.spin_food_diary_date);
     }
 }
