@@ -13,13 +13,12 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
 
-    private EditText signInEmail, signInPassword, createAccName, createAccEmail, createAccPass, createAccConfirmPass;
-    private RelativeLayout anonLogIn, gmailLogin, facebookLogin;
-    private LinearLayout signIn, kidOne, kidTwo, confirmCreateAcc, mealOne, mealTwo, mealThree;
+    private EditText signInEmail, signInPassword, createAccName, createAccEmail, createAccPass, createAccConfirmPass, addIntolOne, addintolTwo, addintolThree, addChildName, addChildAge;
+    private RelativeLayout anonLogIn, gmailLogin, facebookLogin, editProfileRedOne, editProfileRedTwo, cancelAddChild, doneAddChild, selectMale, selectFemale;
+    private LinearLayout signIn, kidOne, kidTwo, confirmCreateAcc, mealOne, mealTwo, mealThree, editProfile;
     private TextView forgotPassword, signUp;
     private ImageView addPic, addKid, addFood;
     private Spinner dateSpinner;
-
 
 
     @Override
@@ -34,11 +33,23 @@ public class MainActivity extends AppCompatActivity {
         createAccConfirmPass = findViewById(R.id.et_create_acc_confirm_pass);
         signInEmail = findViewById(R.id.et_sign_in_email_input);
         signInPassword = findViewById(R.id.et_sign_in_password_input);
+        addIntolOne = findViewById(R.id.et_add_child_intolerance_one);
+        addintolTwo = findViewById(R.id.et_add_child_intolerance_two);
+        addintolThree = findViewById(R.id.et_add_child_intolerance_three);
+        addChildName = findViewById(R.id.et_add_child_name_input);
+        addChildAge = findViewById(R.id.et_add_child_age_input);
 
         // RelativeLayout
         anonLogIn = findViewById(R.id.rl_anonymous_login);
         gmailLogin = findViewById(R.id.rl_gmail_login);
         facebookLogin = findViewById(R.id.rl_facebook_login);
+        editProfileRedOne = findViewById(R.id.rl_red_button_edit_one);
+        editProfileRedTwo = findViewById(R.id.rl_red_button_edit_two);
+        cancelAddChild = findViewById(R.id.rl_cancel_add_child);
+        doneAddChild = findViewById(R.id.rl_done_add_child);
+        selectMale = findViewById(R.id.rl_select_male);
+        selectFemale = findViewById(R.id.rl_select_female);
+
 
         // LinearLayout
         kidOne = findViewById(R.id.ll_kid_one);
@@ -48,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         mealOne = findViewById(R.id.ll_meal_one);
         mealTwo = findViewById(R.id.ll_meal_two);
         mealThree = findViewById(R.id.ll_meal_three);
+        editProfile = findViewById(R.id.ll_edit_profile);
 
         // TextView
         forgotPassword = findViewById(R.id.tv_forgot_password);

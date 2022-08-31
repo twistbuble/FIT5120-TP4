@@ -26,4 +26,12 @@
     <string name="string_oatmeal">Oatmeal 9:00 AM</string>
     <string name="string_burger">Beef Burger 12:00 PM</string>
     <string name="string_butter_crackers">Butter Crackers 5:00 PM</string>
+    <string name="string_edit">Edit</string>
+    <string name="string_save">Save</string>
+    <string name="string_add_child">Add Child</string>
+    <string name="string_gender">Gender</string>
+    <string name="string_general_details">General Details</string>
+    <string name="string_age">Age</string>
+    <string name="string_intolerances">Intolerances</string>
+    <string name="string_intolerances_input">Intolerances (if known)</string>
 </resources>
