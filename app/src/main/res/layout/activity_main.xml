@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/vector_background_add_child"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:id="@+id/ll_edit_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/orange_round_button"
+        android:layout_gravity="end"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="@string/string_edit"
+            android:textColor="@color/cream"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/small_user_icon">
+
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/string_profile"
+                android:textColor="@color/dark_green"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:background="@drawable/transparent_rectangle_small"
+        android:gravity="center_vertical"
+        android:padding="20dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/ellipse_light_grey">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_camera"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/person_icon"/>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_vertical"
+                android:layout_marginStart="50dp"
+                android:gravity="center_vertical"
+                android:id="@+id/tv_username"
+                android:textColor="@color/dark_green"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/transparent_rectangle"
+        android:padding="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/string_kids"
+            android:id="@+id/tv_kids_title"
+            android:textColor="@color/dark_green"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/rv_children"
+            android:layout_below="@+id/tv_kids_title"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rv_children"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rl_add_kid">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dark_grey_rectangle"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
