@@ -145,6 +145,7 @@ def del_child():
         return {'status': 400, 'message': 'Invalid input.'}
     
     try:
+        Meal.query.filter_by(child_id=int(child_id)).delete()
         Child.query.filter_by(child_id=int(child_id)).delete()
         db.session.commit()
         return {'status': 200, 'message': 'Deleting child successful.'}
