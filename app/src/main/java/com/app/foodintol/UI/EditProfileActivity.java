@@ -133,4 +133,13 @@ public class EditProfileActivity extends AppCompatActivity implements DeleteChil
         }
 
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        startActivity(new Intent(EditProfileActivity.this, MainActivity.class));
+        finish();
+
+    }
 }
