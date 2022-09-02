@@ -166,7 +166,6 @@ public class LoginActivity extends AppCompatActivity {
 //            @Override
 //            public void onReceiveResponse(LoginResponse response) {
 //
-////                Log.e("LoginActivity", "logged In!!");
 //
 //                startActivity(new Intent(LoginActivity.this, MainActivity.class));
 //                finish();

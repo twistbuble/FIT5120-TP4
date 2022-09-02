@@ -120,8 +120,6 @@ public class MainActivity extends AppCompatActivity implements ChildAdapter.Chil
     @Override
     public void onChildClick(HomeScreenDataResponseChildren data, int pos) {
 
-        Log.e("MainActivity", "childId:" + data.getId());
-
         Intent intent = new Intent(MainActivity.this, FoodDiaryActivity.class);
 
         intent.putExtra("ChildId", data.getId());

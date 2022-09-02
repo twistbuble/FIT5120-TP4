@@ -244,14 +244,6 @@ public class AddMealActivity extends AppCompatActivity {
 
     private void addMeal() {
 
-        Log.e("ADDMEALACTIVITY", "childid: " + childId);
-        Log.e("ADDMEALACTIVITY", "descriptionOne: " + descriptionOne);
-        Log.e("ADDMEALACTIVITY", "title: " + title.getText().toString());
-        Log.e("ADDMEALACTIVITY", "mood: " + mood);
-        Log.e("ADDMEALACTIVITY", "stomachAche: " + stomachAche);
-        Log.e("ADDMEALACTIVITY", "energy: " + energy);
-        Log.e("ADDMEALACTIVITY", "timestamp: " + timestamp);
-
         AddMealRequest request = new AddMealRequest();
         request.setChildId(Integer.parseInt(childId));
         request.setFoodDescription(descriptionOne.getText().toString() + descriptionTwo.getText().toString());

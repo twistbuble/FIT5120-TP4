@@ -78,9 +78,6 @@ public class ViewMealActivity extends AppCompatActivity {
 
         LoadMealRequest request = new LoadMealRequest();
 
-        Log.e("ViewMealActivity:", "mealId: " + mealId);
-        Log.e("ViewMealActivity:", "timestamp: " + timestamp);
-
         request.setId(childId);
         request.setTimestamp(timestamp);
 
@@ -91,8 +88,6 @@ public class ViewMealActivity extends AppCompatActivity {
                 try{
 
                     for(int i = 0; i < response.getMeals().size(); i++){
-
-                        Log.e("ViewMealActivity:", "mealId: " + response.getMeals().get(i).getMeal_id());
 
                         if(response.getMeals().get(i).getMeal_id().equals(mealId)){
 

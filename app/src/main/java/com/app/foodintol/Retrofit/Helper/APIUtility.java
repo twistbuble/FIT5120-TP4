@@ -56,13 +56,11 @@ public class APIUtility {
             @Override
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
                 dismissDialog(isDialog);
-//                Log.e("TAG",response.code()+"");
+
                 if (response.isSuccessful()) {
 
                     try{
                     listener.onReceiveResponse(response.body());
-
-//                    Log.e(response.body().getResult().getUvMax(), response.body().getResult().getUvMaxTime());
 
                     }catch (Exception e){
 

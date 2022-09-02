@@ -92,8 +92,6 @@ public class FoodDiaryActivity extends AppCompatActivity implements MealAdapter.
                                 selectedDate.get(Calendar.YEAR));
 
 
-                        Log.e("FOODDIARYACTIVITY:", "timestamp before: " + selectedDate.getTimeInMillis());
-
                         loadMealsList(selectedDate.getTimeInMillis());
 
                     }
@@ -130,9 +128,6 @@ public class FoodDiaryActivity extends AppCompatActivity implements MealAdapter.
 
         LoadMealRequest request = new LoadMealRequest();
 
-        Log.e("FOODDIARYACTIVITY:", "childId: " + childId);
-        Log.e("FOODDIARYACTIVITY:", "timestamp: " + timestamp);
-
         request.setId(childId);
         request.setTimestamp(timestamp);
 
@@ -144,11 +139,7 @@ public class FoodDiaryActivity extends AppCompatActivity implements MealAdapter.
 
                     ArrayList<LoadMealResponseList> finalList = new ArrayList<>();
 
-                    Log.e("FOODDIARYACTIVITY:", "size: " + response.getMeals().size());
-
                     if(response.getMeals().size() > 0){
-
-                        Log.e("FOODDIARYACTIVITY:", "title: " + response.getMeals().get(0).getTitle());
 
                         finalList = response.getMeals();
 
@@ -179,8 +170,6 @@ public class FoodDiaryActivity extends AppCompatActivity implements MealAdapter.
 
     @Override
     public void onMealClick(LoadMealResponseList data, int pos) {
-
-        Log.e("FoodDiaryActivity:", "mealId: " + data.getMeal_id());
 
         Intent i = new Intent(FoodDiaryActivity.this, ViewMealActivity.class);
 

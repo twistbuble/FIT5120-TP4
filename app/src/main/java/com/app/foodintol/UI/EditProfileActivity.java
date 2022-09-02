@@ -104,7 +104,6 @@ public class EditProfileActivity extends AppCompatActivity implements DeleteChil
     @Override
     public void onDeleteClick(HomeScreenDataResponseChildren data, int pos) {
 
-        Log.e("MainActivity", "childId:" + data.getId());
         deleteChild(data.getId());
 
     }
@@ -112,8 +111,6 @@ public class EditProfileActivity extends AppCompatActivity implements DeleteChil
     private void deleteChild(String id) {
 
         try {
-
-            Log.e("MainActivity", "childId:" + id);
 
             DeleteChildRequest request = new DeleteChildRequest();
             request.setChildId(id);
