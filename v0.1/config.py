@@ -7,8 +7,8 @@ TEMPLATES_AUTO_RELOAD = True
 SECRET_KEY = os.urandom(32)
 
 # mysql
-msg = "mysql+pymysql://root:root@10.211.55.7:3306/food_intol"
-# msg = "mysql+pymysql://root:5177FC9E-8C6B@127.0.0.1:3306/food_intol"
+# msg = "mysql+pymysql://root:root@10.211.55.7:3306/food_intol"
+msg = "mysql+pymysql://root:5177FC9E-8C6B@127.0.0.1:3306/food_intol"
 SQLALCHEMY_DATABASE_URI = msg
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 
