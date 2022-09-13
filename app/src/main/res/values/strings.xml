@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">iteration_two</string>
+    <string name="create_account">Create Account</string>
+    <string name="name">Name</string>
+    <string name="signup">Signup</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="foodintol">FoodInTol</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_child">Add a Child</string>
+    <string name="gender">Gender</string>
+    <string name="child_name">Child Name</string>
+    <string name="enter_child_name">Enter your Child\'s Name</string>
+    <string name="child_age">Child Age</string>
+    <string name="enter_child_age">Enter your Child\'s Age</string>
+    <string name="confirm">Confirm</string>
+</resources>
