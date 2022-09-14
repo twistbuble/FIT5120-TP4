@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="dark_cream">#F0F0B4</color>
     <color name="cream">#DBE7CF</color>
+    <color name="light_cream">#E5EBE0</color>
     <color name="olive_green">#0B413F</color>
     <color name="light_green">#78B073</color>
     <color name="orange">#FF7A00</color>
@@ -21,5 +22,7 @@
     <color name="lime_green">#BEE09B</color>
     <color name="transparent">#00000000</color>
     <color name="grey">#929292</color>
+    <color name="pink">#D69DEA</color>
+    <color name="swamp_green">#5B7C58</color>
 
 </resources>
