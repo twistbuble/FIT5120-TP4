@@ -14,10 +14,16 @@
         android:theme="@style/Theme.Iteration_two"
         tools:targetApi="31">
         <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeScreenActivity"
+            android:exported="false" />
+        <activity
             android:name=".AddChildActivity"
             android:exported="false" />
         <activity
-            android:name=".SigninActivity"
+            android:name=".SignInActivity"
             android:exported="false"
             android:label="@string/title_activity_signin"
             android:theme="@style/Theme.Iteration_two.NoActionBar" />

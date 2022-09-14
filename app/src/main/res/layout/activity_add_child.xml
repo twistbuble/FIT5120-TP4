@@ -17,10 +17,10 @@
         android:layout_marginTop="30dp">
 
         <RelativeLayout
+            android:id="@+id/rl_cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:elevation="5dp"
-            android:id="@+id/rl_cancel"
             android:background="@drawable/rounded_rectangle_grey">
 
             <TextView
@@ -34,15 +34,15 @@
 
     </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/add_child"
-            android:textColor="@color/olive_green"
-            android:textSize="18sp"
-            android:layout_gravity="center"
-            android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/add_child"
+        android:textColor="@color/olive_green"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -149,7 +149,7 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/et_add_child_name_input"
+            android:id="@+id/et_add_child_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLines="1"
@@ -196,7 +196,7 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/et_add_child_intolerance_one"
+            android:id="@+id/et_add_child_age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -207,9 +207,8 @@
 
     </LinearLayout>
 
-
     <RelativeLayout
-        android:id="@+id/rl_confirm_signup"
+        android:id="@+id/rl_add_child_confirm"
         android:layout_width="220dp"
         android:layout_gravity="center"
         android:layout_height="45dp"
@@ -220,14 +219,14 @@
         android:orientation="vertical"
         android:padding="10dp">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="@string/confirm"
-        android:textColor="@color/white"
-        android:textSize="18sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
 
     </RelativeLayout>
