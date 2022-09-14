@@ -220,7 +220,7 @@
         android:layout_marginTop="15dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:background="@drawable/smooth_square_light_cream_large">
+        android:background="@drawable/rounded_square_light_cream_large">
 
         <LinearLayout
             android:layout_width="wrap_content"

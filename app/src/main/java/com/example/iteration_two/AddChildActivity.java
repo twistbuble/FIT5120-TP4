@@ -8,7 +8,7 @@ import android.widget.RelativeLayout;
 
 public class AddChildActivity extends AppCompatActivity {
 
-    private RelativeLayout cancel, selectMale, selectFemale, confirmAddChild;
+    private RelativeLayout cancelAddChild, selectMale, selectFemale, confirmAddChild;
     private EditText childName, childAge;
 
     @Override
@@ -16,7 +16,7 @@ public class AddChildActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_child);
 
-        cancel = findViewById(R.id.rl_cancel);
+        cancelAddChild = findViewById(R.id.rl_cancel_add_child);
         selectMale = findViewById(R.id.rl_select_male);
         selectFemale = findViewById(R.id.rl_select_female);
         childName = findViewById(R.id.et_add_child_name);

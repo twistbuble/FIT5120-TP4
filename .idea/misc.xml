@@ -26,12 +26,18 @@
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_rectangle_green_small.xml" value="0.2565" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_rectangle_grey.xml" value="0.2175" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_rectangle_grey_medium.xml" value="0.1985" />
+        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_rectangle_lavender_extra_large.xml" value="0.1985" />
+        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_rectangle_light_cream_large.xml" value="0.1985" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_rectangle_light_green_small.xml" value="0.218" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_rectangle_olive_green.xml" value="0.2175" />
+        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_rectangle_olive_green_large.xml" value="0.1985" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_rectangle_olive_green_medium.xml" value="0.1985" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_rectangle_orange.xml" value="0.2175" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_rectangle_purple_small.xml" value="0.2565" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_rectangle_transparent_grey.xml" value="0.1985" />
+        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_rectangle_white_small.xml" value="0.1985" />
+        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_square_light_cream_large.xml" value="0.1985" />
+        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_square_white_small.xml" value="0.1985" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/signin_rectangle_cream.xml" value="0.2175" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/signup_background.xml" value="0.2175" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/signup_rectangle_smooth.xml" value="0.2175" />
@@ -40,6 +46,7 @@
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/swamp_green_square_transparent.xml" value="0.2565" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/white_circle_small.xml" value="0.218" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/layout/activity_add_child.xml" value="0.25" />
+        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/layout/activity_add_food_diary.xml" value="0.2907608695652174" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/layout/activity_food_diary.xml" value="0.25" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/layout/activity_home_screen.xml" value="0.3" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/layout/activity_main.xml" value="0.26038500506585616" />

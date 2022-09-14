@@ -58,4 +58,6 @@
     <string name="meals">Meals</string>
     <string name="no_meals_entered">No meals entered</string>
     <string name="add_food">Add Food</string>
+    <string name="add_a_meal">Add a Meal</string>
+    <string name="time">Time:</string>
 </resources>
