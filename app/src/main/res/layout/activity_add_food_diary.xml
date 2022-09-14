@@ -9,16 +9,11 @@
     android:padding="20dp"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:orientation="horizontal"
-        android:gravity="bottom"
-        android:layout_marginTop="30dp">
 
         <RelativeLayout
             android:id="@+id/rl_cancel_add_meal"
             android:layout_width="wrap_content"
+            android:layout_marginTop="35dp"
             android:layout_height="wrap_content"
             android:elevation="5dp"
             android:background="@drawable/rounded_rectangle_grey_small">
@@ -32,7 +27,7 @@
                 android:textSize="12sp"/>
         </RelativeLayout>
 
-    </LinearLayout>
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,6 +42,7 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:elevation="5dp"
         android:background="@drawable/rounded_rectangle_light_cream_large"
         android:padding="5dp">
@@ -61,8 +57,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -78,7 +74,6 @@
                     android:id="@+id/rl_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:background="@drawable/rounded_rectangle_white_small">
 
                     <TextView
@@ -86,7 +81,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:hint="Select a Time"
+                        android:hint="@string/select_a_time"
                         android:textAlignment="center"
                         android:textSize="15sp">
 
@@ -102,55 +97,143 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="20dp"
-                    android:background="@drawable/rounded_square_white_small">
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
-                    <ImageView
+                    <RelativeLayout
+                        android:id="@+id/rl_select_breakfast"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:src="@drawable/morning_icon">
-                    </ImageView>
+                        android:background="@drawable/rounded_square_white_small">
 
-                </RelativeLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/morning_icon">
+                        </ImageView>
 
-                <RelativeLayout
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/breakfast"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:background="@drawable/rounded_square_white_small">
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
-                    <ImageView
+                    <RelativeLayout
+                        android:id="@+id/rl_select_lunch"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:src="@drawable/afternoon_icon">
-                    </ImageView>
+                        android:background="@drawable/rounded_square_white_small">
 
-                </RelativeLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/afternoon_icon">
 
-                <RelativeLayout
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/lunch"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:background="@drawable/rounded_square_white_small">
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
-                    <ImageView
+                    <RelativeLayout
+                        android:id="@+id/rl_select_dinner"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:src="@drawable/night_icon">
-                    </ImageView>
-                </RelativeLayout>
+                        android:background="@drawable/rounded_square_white_small">
 
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/night_icon">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/dinner"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_select_snack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_square_white_small">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/snack_icon">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/snack"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
             </LinearLayout>
-
-
-
         </LinearLayout>
 
 
@@ -160,6 +243,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:elevation="5dp"
         android:background="@drawable/rounded_square_light_cream_large"
         android:layout_gravity="center"
@@ -168,10 +252,149 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_square_lavender_large">
+            android:background="@drawable/rounded_square_lavender_large"
+            android:orientation="vertical"
+            android:padding="15dp">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/meal_title"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_rectangle_white_medium"
+                android:elevation="5dp"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/et_meal_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:background="@color/transparent"
+                    android:drawablePadding="12dp"
+                    android:hint="@string/enter_text_here"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    tools:ignore="RtlHardcoded" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Description"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_rectangle_white_large"
+                android:elevation="5dp">
+
+                <EditText
+                    android:id="@+id/et_meal_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/transparent"
+                    android:drawablePadding="12dp"
+                    android:hint="Leave blank if inapplicable"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    tools:ignore="RtlHardcoded" />
+            </RelativeLayout>
 
         </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_rectangle_cream_medium"
+        android:elevation="5dp"
+        android:padding="5dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_add_symptoms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_rectangle_lime_green_medium"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="150dp"
+                android:background="@color/transparent"
+                android:drawablePadding="12dp"
+                android:maxLines="1"
+                android:text="@string/symptoms"
+                android:textColor="@color/olive_green"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cream_circle_small">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/arrow_icon">
+
+                </ImageView>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_add_meal_confirm"
+        android:layout_width="220dp"
+        android:layout_gravity="center"
+        android:layout_height="45dp"
+        android:layout_marginTop="45dp"
+        android:elevation="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_rectangle_orange"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+
     </RelativeLayout>
 
 </LinearLayout>
