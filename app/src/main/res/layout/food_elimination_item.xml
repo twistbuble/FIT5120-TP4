@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_rectangle_purple_small"
+        android:background="@drawable/rounded_rectangle_yellow_medium"
         android:padding="5dp">
 
         <LinearLayout
@@ -24,22 +24,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_gravity="center_vertical"
-                android:background="@drawable/purple_square_small"
                 android:elevation="5dp">
 
                 <ImageView
                     android:id="@+id/iv_food_elimination_icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/dairy_icon">
+                    android:layout_centerInParent="true">
+
                 </ImageView>
 
             </RelativeLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="230dp"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
@@ -48,8 +48,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    android:text="@string/string_food_elimination_item"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold"/>
@@ -57,27 +55,27 @@
                 <View
                     android:layout_width="wrap_content"
                     android:layout_height="2dp"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginBottom="4dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
                     android:background="#c0c0c0" />
 
                 <TextView
-                    android:id="@+id/tv_child_age_food_elimination"
+                    android:id="@+id/tv_food_elimination_dates"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    android:text="@string/string_food_elimination_time"
+                    android:layout_marginTop="10dp"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold"/>
+                    android:textSize="18sp"/>
 
             </LinearLayout>
 
             <ImageView
+                android:id="@+id/iv_progress_icon"
                 android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/doing_icon">
+                android:layout_height="wrap_content">
             </ImageView>
 
         </LinearLayout>

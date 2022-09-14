@@ -41,6 +41,7 @@
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_rectangle_transparent_grey.xml" value="0.1985" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_rectangle_white_large.xml" value="0.1985" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_rectangle_white_small.xml" value="0.1985" />
+        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_rectangle_yellow_medium.xml" value="0.1985" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_square_lavender_large.xml" value="0.1985" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_square_light_cream_large.xml" value="0.1985" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/rounded_square_white_small.xml" value="0.1985" />
@@ -63,7 +64,7 @@
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/layout/activity_signin.xml" value="0.25" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/layout/add_child.xml" value="0.2907608695652174" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/layout/content_main.xml" value="0.2907608695652174" />
-        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/layout/food_elimination_item.xml" value="0.2907608695652174" />
+        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/layout/food_elimination_item.xml" value="0.33" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/layout/meal_item.xml" value="0.2907608695652174" />
       </map>
     </option>

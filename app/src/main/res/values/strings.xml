@@ -70,4 +70,7 @@
     <string name="select_a_time">Select a Time</string>
     <string name="string_food_elimination_item">Dairy</string>
     <string name="string_food_elimination_time">12/9/2022 - 26/9/2022</string>
+    <string name="start_elimination">Start Elimination</string>
+    <string name="food_elimination_diets">Food Elimination Diets</string>
+    <string name="no_data_available">No Data Available</string>
 </resources>

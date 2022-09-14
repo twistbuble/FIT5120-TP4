@@ -19,9 +19,12 @@ public class FoodDiaryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_diary);
 
+        // activity_food_diary.xml
         todayDate = findViewById(R.id.tv_today_date);
         calenderButton = findViewById(R.id.rl_calender_button);
         addFood = findViewById(R.id.rl_add_food);
+
+        // meal_item.xml
         timeIcon = findViewById(R.id.iv_time_icon);
         mealName = findViewById(R.id.tv_meal_name);
         mealTime = findViewById(R.id.tv_meal_time);
