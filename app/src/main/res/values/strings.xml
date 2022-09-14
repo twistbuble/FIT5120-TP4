@@ -54,4 +54,8 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_signin">SigninActivity</string>
+    <string name="string_today_date">11/9/2022</string>
+    <string name="meals">Meals</string>
+    <string name="no_meals_entered">No meals entered</string>
+    <string name="add_food">Add Food</string>
 </resources>
