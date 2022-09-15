@@ -77,4 +77,8 @@
     <string name="duration">Duration:</string>
     <string name="food_elimination_duration">14\ndays</string>
     <string name="start">Start</string>
+    <string name="email_verification">Email Verification</string>
+    <string name="otp_email_info">An confirmation email has been sent to your email address.\nPlease follow the instructions provided in the email to activate your account.</string>
+    <string name="no_receive_email">Didn\'t receive an email?</string>
+    <string name="resend_email">Resend Email</string>
 </resources>
