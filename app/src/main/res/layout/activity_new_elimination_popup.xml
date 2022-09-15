@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/rounded_rectangle_olive_green_extra_large">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/new_elimination_diet"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/rounded_rectangle_cream_medium_two">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/ingredient"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_ingredient_dropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_rectangle_white_small"
+                android:gravity="end"
+                android:layout_gravity="center_vertical">
+
+                <Spinner
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown">
+
+                </Spinner>
+            </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_rectangle_light_cream_large">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/duration"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/white_circle_medium">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/white_circle_medium_stroke">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/food_elimination_duration"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_cancel_new_elimination"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="50dp"
+            android:elevation="5dp"
+            android:background="@drawable/rounded_rectangle_grey_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_start_new_elimination"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:elevation="5dp"
+            android:background="@drawable/rounded_rectangle_orange">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/start"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+

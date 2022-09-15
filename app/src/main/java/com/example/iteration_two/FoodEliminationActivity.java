@@ -11,7 +11,7 @@ public class FoodEliminationActivity extends AppCompatActivity {
 
     private TextView childName, childAge, foodEliminationItem, foodEliminationDates;
     private ImageView childGender, foodEliminationIcon, progressIcon;
-    private RelativeLayout startElimination;
+    private RelativeLayout startElimination, ingredientDropdown, cancelNewElimination, startNewElimination;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,10 @@ public class FoodEliminationActivity extends AppCompatActivity {
         foodEliminationDates = findViewById(R.id.tv_food_elimination_dates);
         progressIcon = findViewById(R.id.iv_progress_icon);
 
+        // new_elimination_popup.xml
+        ingredientDropdown = findViewById(R.id.rl_ingredient_dropdown);
+        cancelNewElimination = findViewById(R.id.rl_cancel_new_elimination);
+        startNewElimination = findViewById(R.id.rl_start_new_elimination);
 
     }
 }

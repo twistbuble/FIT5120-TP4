@@ -71,6 +71,10 @@
     <string name="string_food_elimination_item">Dairy</string>
     <string name="string_food_elimination_time">12/9/2022 - 26/9/2022</string>
     <string name="start_elimination">Start Elimination</string>
-    <string name="food_elimination_diets">Food Elimination Diets</string>
     <string name="no_data_available">No Data Available</string>
+    <string name="ingredient">Ingredient</string>
+    <string name="new_elimination_diet">New Elimination Diet</string>
+    <string name="duration">Duration:</string>
+    <string name="food_elimination_duration">14\ndays</string>
+    <string name="start">Start</string>
 </resources>
