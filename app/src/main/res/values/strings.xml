@@ -182,4 +182,10 @@
     <string name="sample_ingredients">2 large egg whites 1 pound new potatoes (about 1 inch in diameter)\n2 teaspoons kosher salt\n¾ teaspoon finely ground black pepper\n1 teaspoon finely chopped rosemary\n1 teaspoon finely chopped thyme\n1 teaspoon finely chopped parsley\n</string>
     <string name="sample_cooking_instructions">Preheat oven to 400°F and line a rimmed baking sheet with parchment. In a large bowl, whisk the egg whites until foamy (there shouldn’t be any liquid whites in the bowl).\n\nAdd the potatoes and toss until they’re well coated with the egg whites, then transfer to a strainer or colander and let the excess whites drain.\n\nSeason the potatoes with the salt, pepper, and herbs.\nScatter the potatoes on the baking sheet (make sure they’re not touching) and roast until the potatoes are very crispy and tender when poked with a knife, 15 to 20 minutes (depending on the size of the potatoes).\n\nTransfer to a bowl and serve.\n</string>
     <string name="cooking_instructions">Cooking Instructions</string>
+    <string name="string_foodintol">FoodInTol</string>
+    <string name="string_child_name">Oliver</string>
+    <string name="home">Home</string>
+    <string name="switch_child_profile">Switch Child Profile</string>
+    <string name="logout">Logout</string>
+    <string name="string_version">V0.2</string>
 </resources>
