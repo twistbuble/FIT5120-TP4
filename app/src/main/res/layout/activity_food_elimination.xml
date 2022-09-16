@@ -21,7 +21,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_rectangle_purple_medium"
+            android:background="@drawable/rounded_rectangle_baby_blue_medium"
             android:padding="5dp">
 
             <LinearLayout

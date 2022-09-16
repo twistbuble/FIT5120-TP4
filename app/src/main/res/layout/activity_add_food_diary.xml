@@ -177,7 +177,7 @@
                         android:id="@+id/rl_select_dinner"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/rounded_square_white_small">
+                        android:background="@drawable/rounded_square_teal_small">
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -252,7 +252,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_square_lavender_large"
+            android:background="@drawable/rounded_square_baby_blue_large"
             android:orientation="vertical"
             android:padding="15dp">
 

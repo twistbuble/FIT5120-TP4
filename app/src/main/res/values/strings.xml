@@ -188,4 +188,10 @@
     <string name="switch_child_profile">Switch Child Profile</string>
     <string name="logout">Logout</string>
     <string name="string_version">V0.2</string>
+    <string name="sample_recipe_title">Miso-Butter Roast Chicken With Acorn Squash Panzanella</string>
+    <string name="recommended">Recommended</string>
+    <string name="string_recipes_excluding">Currently showing recipes excluding:</string>
+    <string name="recipes">Recipes</string>
+    <string name="top_recommended_recipes">Top Recommended Recipes</string>
+    <string name="other_recipes">Other Recipes</string>
 </resources>
