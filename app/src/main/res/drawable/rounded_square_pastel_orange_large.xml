@@ -2,7 +2,7 @@
 
     <size android:height="300dp"
         android:width="330dp"/>
-    <solid android:color="@color/light_cream" />
+    <solid android:color="@color/pastel_orange" />
     <corners android:radius="25dp" />
 
 </shape>
