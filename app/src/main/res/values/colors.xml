@@ -20,6 +20,7 @@
     <color name="lavender">#9B8EE0</color>
     <color name="purple">#6A60A0</color>
     <color name="yellow">#FFD058</color>
+    <color name="mustard_yellow">#FFDA58</color>
     <color name="magenta">#AC5F8D</color>
     <color name="lime_green">#BEE09B</color>
     <color name="transparent">#00000000</color>
@@ -35,4 +36,7 @@
     <color name="pastel_green">#6BB07E</color>
     <color name="baby_blue">#63B1DD</color>
     <color name="light_brown">#927C2F</color>
+    <color name="aquamarine">#7BD8D2</color>
+    <color name="apricot">#F1AC6C</color>
+    <color name="burgundy">#CE6565</color>
 </resources>

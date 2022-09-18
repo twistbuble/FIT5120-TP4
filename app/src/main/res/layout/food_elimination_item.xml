@@ -76,11 +76,11 @@
                 android:id="@+id/iv_progress_icon"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content">
+                <!--doing_icon.png-->
+                <!--done_icon.png-->
             </ImageView>
 
         </LinearLayout>
-
-
 
     </RelativeLayout>
 </RelativeLayout>

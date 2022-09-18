@@ -6,6 +6,14 @@
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/cream_circle_small.xml" value="0.1985" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/dark_green_rectangle_smooth.xml" value="0.2175" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/grey_square.xml" value="0.2175" />
+        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/grid_rectangle_medium_eight.xml" value="0.203" />
+        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/grid_rectangle_medium_five.xml" value="0.203" />
+        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/grid_rectangle_medium_one.xml" value="0.203" />
+        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/grid_rectangle_medium_seven.xml" value="0.203" />
+        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/grid_rectangle_medium_six.xml" value="0.203" />
+        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/grid_rectangle_medium_three.xml" value="0.203" />
+        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/grid_rectangle_medium_two.xml" value="0.203" />
+        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/grid_rectangle_medium_white.xml" value="0.203" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/grid_square_eight.xml" value="0.2565" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/grid_square_five.xml" value="0.2565" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/drawable/grid_square_four.xml" value="0.2565" />
@@ -81,6 +89,7 @@
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/layout/activity_food_diary.xml" value="0.25" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/layout/activity_food_elimination.xml" value="0.2907608695652174" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/layout/activity_food_intolerance_information.xml" value="0.33" />
+        <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/layout/activity_food_intolerance_main_page.xml" value="0.3713768115942029" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/layout/activity_home_screen.xml" value="0.3" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/layout/activity_main.xml" value="0.26038500506585616" />
         <entry key="..\:/Users/Sam/AndroidStudioProjects/iteration_two/app/src/main/res/layout/activity_meal_recipes_home.xml" value="0.36730072463768115" />

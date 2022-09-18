@@ -202,4 +202,12 @@
     <string name="articles">Articles</string>
     <string name="food_intolerance_information">Food Intolerance Information</string>
     <string name="retrieved_from_healthline">Retrieved from Healthline</string>
+    <string name="histamine">Histamine</string>
+    <string name="salicylates">Salicylates</string>
+    <string name="fodmaps">Fodmaps</string>
+    <string name="fructose">Fructose</string>
+    <string name="eggs">Eggs</string>
+    <string name="soy">Soy</string>
+    <string name="gluten">Gluten</string>
+    <string name="dairy">Dairy</string>
 </resources>
