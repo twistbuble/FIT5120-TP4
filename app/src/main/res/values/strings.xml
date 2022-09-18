@@ -194,4 +194,12 @@
     <string name="recipes">Recipes</string>
     <string name="top_recommended_recipes">Top Recommended Recipes</string>
     <string name="other_recipes">Other Recipes</string>
+    <string name="open_data">Open Data</string>
+    <string name="retrieved_from_kaggle">Retrieved from Kaggle</string>
+    <string name="meal_recipes">Meal Recipes</string>
+    <string name="recipe_dataset_link">https://www.kaggle.com/datasets/pes12017000148/food-ingredients-and-recipe-dataset-with-images</string>
+    <string name="healthline_article_one_link">https://www.healthline.com/nutrition/common-food-intolerances#TOC_TITLE_HDR_4</string>
+    <string name="articles">Articles</string>
+    <string name="food_intolerance_information">Food Intolerance Information</string>
+    <string name="retrieved_from_healthline">Retrieved from Healthline</string>
 </resources>

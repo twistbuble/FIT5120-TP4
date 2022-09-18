@@ -38,7 +38,7 @@
             android:orientation="horizontal"
             android:layout_marginTop="15dp"
             android:elevation="5dp"
-            android:background="@drawable/rounded_square_light_cream_large"
+            android:background="@drawable/rounded_square_light_cream_large_one"
             android:padding="5dp">
 
             <LinearLayout
@@ -108,7 +108,7 @@
             android:orientation="horizontal"
             android:layout_marginTop="15dp"
             android:elevation="5dp"
-            android:background="@drawable/rounded_square_light_cream_large"
+            android:background="@drawable/rounded_square_light_cream_large_one"
             android:padding="5dp">
 
             <LinearLayout
@@ -284,7 +284,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="30dp"
             android:elevation="5dp"
-            android:background="@drawable/rounded_square_light_cream_large"
+            android:background="@drawable/rounded_square_light_cream_large_one"
             android:padding="5dp">
 
             <LinearLayout
