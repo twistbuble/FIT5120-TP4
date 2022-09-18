@@ -17,10 +17,9 @@
         android:gravity="end">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:src="@drawable/white_logo">
-        </ImageView>
+            android:layout_width="125dp"
+            android:layout_height="110dp"
+            android:src="@drawable/team_logo_image" />
 
 
     </RelativeLayout>

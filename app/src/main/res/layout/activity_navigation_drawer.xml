@@ -22,6 +22,12 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="15dp"
             android:background="@drawable/cream_circle_small">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/team_logo_image" />
         </RelativeLayout>
 
         <TextView

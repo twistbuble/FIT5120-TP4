@@ -18,10 +18,10 @@
         android:padding="20dp">
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
             android:layout_gravity="center"
-            android:src="@drawable/logo_black" />
+            android:src="@drawable/team_logo_image" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -29,7 +29,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:text="@string/foodintol"
-            android:textColor="@color/olive_green"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
