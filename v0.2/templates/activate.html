@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mail</title>
+</head>
+<body>
+    <h1>Hello {{ username }}</h1>
+    <p>To activate, please click this link: <a href="{{ url_for('activate', token=token, _external=True) }}">Activate your account</a></p>
+</body>
+</html>
