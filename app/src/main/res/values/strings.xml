@@ -30,14 +30,14 @@
     <string name="eczema">Eczema</string>
     <string name="string_stomach_ache">Stomach\nAche</string>
     <string name="nausea">Nausea</string>
-    <string name="respiratory_problems">Respiratory\nProblems</string>
+    <string name="trouble_breathing">Trouble\nBreathing</string>
     <string name="string_respiratory_problems_count">0</string>
     <string name="string_headaches_count">0</string>
     <string name="string_nausea_count">0</string>
     <string name="string_stomache_ache_count">0</string>
     <string name="string_diarrhoea_count">0</string>
     <string name="diarrhoea">Diarrhoea</string>
-    <string name="lethargic">Lethargic</string>
+    <string name="tiredness">Tiredness</string>
     <string name="string_lethargic_count">0</string>
     <string name="joint_pains">Joint Pains</string>
     <string name="string_bloating_count">0</string>
@@ -81,101 +81,10 @@
     <string name="otp_email_info">An confirmation email has been sent to your email address.\nPlease follow the instructions provided in the email to activate your account.</string>
     <string name="no_receive_email">Didn\'t receive an email?</string>
     <string name="resend_email">Resend Email</string>
-    <string name="title_activity_food_intolerance_information">FoodIntoleranceInformationActivity
-    </string>
-    <string name="large_text">
-        "Material is the metaphor.\n\n"
-
-        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
-        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
-        "technologically advanced and open to imagination and magic.\n"
-        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
-        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
-        "flexibility of the material creates new affordances that supercede those in the physical "
-        "world, without breaking the rules of physics.\n"
-        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
-        "interact, and exist in space and in relation to each other. Realistic lighting shows "
-        "seams, divides space, and indicates moving parts.\n\n"
-
-        "Bold, graphic, intentional.\n\n"
-
-        "The foundational elements of print based design typography, grids, space, scale, color, "
-        "and use of imagery guide visual treatments. These elements do far more than please the "
-        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
-        "imagery, large scale typography, and intentional white space create a bold and graphic "
-        "interface that immerse the user in the experience.\n"
-        "An emphasis on user actions makes core functionality immediately apparent and provides "
-        "waypoints for the user.\n\n"
-
-        "Motion provides meaning.\n\n"
-
-        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
-        "inflection points that initiate motion, transforming the whole design.\n"
-        "All action takes place in a single environment. Objects are presented to the user without "
-        "breaking the continuity of experience even as they transform and reorganize.\n"
-        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
-        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
-
-        "3D world.\n\n"
-
-        "The material environment is a 3D space, which means all objects have x, y, and z "
-        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
-        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
-        "position along the z-axis and has a standard 1dp thickness.\n"
-        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
-        "emulated by manipulating the y-axis.\n\n"
-
-        "Light and shadow.\n\n"
-
-        "Within the material environment, virtual lights illuminate the scene. Key lights create "
-        "directional shadows, while ambient light creates soft shadows from all angles.\n"
-        "Shadows in the material environment are cast by these two light sources. In Android "
-        "development, shadows occur when light sources are blocked by sheets of material at "
-        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
-        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
-
-        "Resting elevation.\n\n"
-
-        "All material objects, regardless of size, have a resting elevation, or default elevation "
-        "that does not change. If an object changes elevation, it should return to its resting "
-        "elevation as soon as possible.\n\n"
-
-        "Component elevations.\n\n"
-
-        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
-        "does not vary from 6dp in one app to 16dp in another app).\n"
-        "Components may have different resting elevations across platforms, depending on the depth "
-        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
-
-        "Responsive elevation and dynamic elevation offsets.\n\n"
-
-        "Some component types have responsive elevation, meaning they change elevation in response "
-        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
-        "changes are consistently implemented using dynamic elevation offsets.\n"
-        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
-        "to the component’s resting state. They ensure that elevation changes are consistent "
-        "across actions and component types. For example, all components that lift on press have "
-        "the same elevation change relative to their resting elevation.\n"
-        "Once the input event is completed or cancelled, the component will return to its resting "
-        "elevation.\n\n"
-
-        "Avoiding elevation interference.\n\n"
-
-        "Components with responsive elevations may encounter other components as they move between "
-        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
-        "through other material, components avoid interfering with one another any number of ways, "
-        "whether on a per component basis or using the entire app layout.\n"
-        "On a component level, components can move or be removed before they cause interference. "
-        "For example, a floating action button (FAB) can disappear or move off screen before a "
-        "user picks up a card, or it can move if a snackbar appears.\n"
-        "On the layout level, design your app layout to minimize opportunities for interference. "
-        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
-        "when a user tries to pick up one of cards.\n\n"
-    </string>
+    <string name="title_activity_food_intolerance_information">FoodIntoleranceInformationActivity</string>
     <string name="action_settings">Settings</string>
     <string name="back">Back</string>
     <string name="string_food_intolerance_item">Dairy</string>
-    <string name="string_dairy_info">Lactose is a sugar found in milk and dairy products.\n\nIt is broken down in the body by an enzyme called lactase , which is necessary in order for lactose to be properly digested and absorbed.\n\nLactose intolerance is caused by a shortage of lactase enzymes, which causes an inability to digest lactose and results in digestive symptoms.</string>
     <string name="common_symptoms">Common Symptoms</string>
     <string name="common_foods">Common Foods</string>
     <string name="ingredients">Ingredients</string>
@@ -210,4 +119,16 @@
     <string name="soy">Soy</string>
     <string name="gluten">Gluten</string>
     <string name="dairy">Dairy</string>
+
+    <!--food intolerance information strings-->
+    <string name="string_dairy_info">Lactose is a sugar found in milk and dairy products.\n\nIt is broken down in the body by an enzyme called lactase , which is necessary in order for lactose to be properly digested and absorbed.\n\nLactose intolerance is caused by a shortage of lactase enzymes, which causes an inability to digest lactose and results in digestive symptoms.</string>
+    <string name="string_gluten_info">Gluten is a protein found in wheat, barley, rye and other grains.\nAn individual can be born with or develop a gluten intolerance later in life\nFor most gluten intolerance individuals, doctors believe that their bodies cannot absorb carbohydrates correctly, which results in fermentation in their stomach which leads to sickness.\nApproximately 6% of the US population has a gluten intolerance, with the number higher for women than men.</string>
+    <string name="string_soy_info">Soy is a plant-based product found in many Asian meals.\n\nSoy is also widely popular in vegetarian and vegan dishes and is added to meals as a protein replacement for typical meat-based products.\n\nSensitivity to soy is commonly seen in young children, however they typically outgrow it as they become an adult.</string>
+    <string name="string_eggs_info">An egg intolerance is an adverse response to the consumption of eggs\nPeople may have an intolerance to the egg white, egg yolk or potentially both.\n\nEgg intolerances are also more common in children than adults.</string>
+    <string name="string_fructose_info">A fructose intolerance is a condition that affects an individual\'s ability to digest the sugar known as fructose.\n\nFructose is found is many different fruits and is typically either hereditary or a condition known as essential fructosuria, which results in a missing enzyme in the liver that breaks down fructose.</string>
+    <string name="string_fodmaps_info">FODMAPs is an acronym for Fermentable Oligosaccharides Disaccharides Monosaccharides and Polyols.\nThese are found in a wide variety of foods and is typically one of the hardest food intolerances to diagnose.\n\nHowever, typically they are found in certain carbohydrates with symptoms similar to gluten intolerances.</string>
+    <string name="string_salicylates_info">Salicylates are a group of chemicals derived from salicylic acid.\nThey are typically used in food preservatives and some medications.\nIndividuals who are sensitive to salicylates lack the ability to metabolize and excrete salicylates.\nSalicylate sensitivity is thought to be caused by an excessive build-up of leukotrienes in the body.\nIt is also more common in individuals who suffer from asthma.</string>
+    <string name="string_histamine_info">Histamine is a chemical in the body that releases stomach acid and communicates messages with the brain.\n\nA histamine intolerance is a sign that an individual is overproducing histamine, causing an adverse reaction to bodily functions.\n\nFortunately histamine levels can be managed with a careful diet.</string>
+    <string name="gas">Gas</string>
+
 </resources>

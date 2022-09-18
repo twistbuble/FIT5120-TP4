@@ -60,12 +60,11 @@
                         android:layout_centerInParent="true"
                         android:src="@drawable/dairy_icon">
                     </ImageView>
-
                 </RelativeLayout>
 
                 <LinearLayout
                     android:layout_width="190dp"
-                    android:layout_height="260dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:orientation="vertical">
 
@@ -88,13 +87,12 @@
                     <TextView
                         android:id="@+id/tv_food_intolerance_text"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="5dp"
                         android:text="@string/string_dairy_info"
                         android:textColor="@color/olive_green"
-                        android:textSize="13sp" />
-
+                        android:textSize="13sp"/>
                 </LinearLayout>
 
 
@@ -127,8 +125,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="20dp"
-                        android:src="@drawable/symptoms_icon">
-                    </ImageView>
+                        android:src="@drawable/symptoms_icon"/>
 
                     <TextView
                         android:layout_width="wrap_content"
