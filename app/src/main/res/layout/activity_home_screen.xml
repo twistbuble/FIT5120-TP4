@@ -67,9 +67,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/boy_icon">
-
-                    </ImageView>
+                        android:src="@drawable/boy_icon"/>
                 </RelativeLayout>
 
                 <LinearLayout
@@ -176,8 +174,8 @@
 
                 <ImageView
                     android:id="@+id/iv_food_elim_icon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_gravity="center"
                     android:src="@drawable/dairy_icon">
 
@@ -187,7 +185,6 @@
                     android:id="@+id/tv_food_elim_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
                     android:gravity="center"
                     android:text="@string/string_food_elim_item"
                     android:textColor="@color/white"
@@ -198,42 +195,74 @@
         </LinearLayout>
     </RelativeLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="30dp">
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/summary_report"
-            android:textColor="@color/olive_green"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginStart="5dp"/>
 
-        <TextView
-            android:id="@+id/tv_summary_dates"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/summary_report_date"
-            android:textColor="@color/orange"
-            android:layout_marginTop="5dp"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginStart="5dp"/>
-
-        <View
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp"
-            android:layout_height="1.5dp"
-            android:background="#c0c0c0"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1">
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/summary_report"
+                    android:textColor="@color/olive_green"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_summary_dates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/summary_report_date"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_export_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/orange_circle_small"
+            android:layout_weight="7">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/export_button"/>
+
+        </RelativeLayout>
 
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="5dp"
+        android:layout_height="1.5dp"
+        android:background="#c0c0c0"/>
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -9,7 +9,7 @@ import android.widget.RelativeLayout;
 
 public class AddFoodDiaryActivity extends AppCompatActivity {
 
-    private RelativeLayout cancelAddMeal, selectBreakfast, selectLunch, selectDinner, selectSnack, confirmAddMeal;
+    private RelativeLayout cancelAddMeal, selectBreakfast, selectLunch, selectDinner, selectSnack, confirmAddMeal, exportData;
     private EditText mealTitle, mealDescription, additionalNotes;
     private LinearLayout addSymptoms, addPhoto;
 
@@ -29,5 +29,7 @@ public class AddFoodDiaryActivity extends AppCompatActivity {
         confirmAddMeal = findViewById(R.id.rl_add_meal_confirm);
         addPhoto = findViewById(R.id.ll_add_photo);
         additionalNotes = findViewById(R.id.et_additional_notes_add_food);
+        exportData = findViewById(R.id.rl_export_data);
+
     }
 }

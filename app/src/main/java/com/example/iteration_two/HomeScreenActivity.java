@@ -3,6 +3,7 @@ package com.example.iteration_two;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -10,8 +11,9 @@ import android.widget.TextView;
 public class HomeScreenActivity extends AppCompatActivity {
 
     private ImageView genderHome, foodElimIcon;
-    private RelativeLayout foodElimPage, childUserPage, navigationHomeScreen;
+    private RelativeLayout foodElimPage, childUserPage, navigationHomeScreen, exportCancel, exportSend;
     private TextView childName, childAge, foodElimDays, foodElimItem, summaryDates, eczemaCount, stomachAcheCount, diarrhoeaCount, bloatingCount, respiratoryCount, nauseaCount, lethargicCount, jointPainsCount, headachesCount;
+    private EditText exportEnterEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,11 @@ public class HomeScreenActivity extends AppCompatActivity {
         lethargicCount = findViewById(R.id.tv_lethargic_count);
         jointPainsCount = findViewById(R.id.tv_joint_pains_count);
         headachesCount = findViewById(R.id.tv_headaches_count);
+
+        /* data_export_popup.xml*/
+        exportEnterEmail = findViewById(R.id.et_export_enter_email);
+        exportCancel = findViewById(R.id.rl_cancel_export);
+        exportSend = findViewById(R.id.rl_send_export);
 
     }
 }

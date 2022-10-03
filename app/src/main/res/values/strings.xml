@@ -133,5 +133,9 @@
     <string name="no_food_elim">Looks like there are no food\nelimination diets added</string>
     <string name="add_favourites">Add to Favourites</string>
     <string name="additional_notes">Additional Notes?</string>
+    <string name="pdf_report">A PDF report will be emailed to your inbox</string>
+    <string name="enter_email">Please enter your email</string>
+    <string name="export_pdf">Export PDF</string>
+    <string name="send_export">Send</string>
 
 </resources>
