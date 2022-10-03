@@ -64,7 +64,7 @@
     <string name="lunch">Lunch</string>
     <string name="dinner">Dinner</string>
     <string name="snack">Snack</string>
-    <string name="meal_title">Meal Title</string>
+    <string name="meal_title">Meal Title:</string>
     <string name="enter_text_here">Enter text here</string>
     <string name="symptoms">Symptoms?</string>
     <string name="select_a_time">Select a Time</string>
@@ -130,5 +130,8 @@
     <string name="string_salicylates_info">Salicylates are a group of chemicals derived from salicylic acid.\nThey are typically used in food preservatives and some medications.\nIndividuals who are sensitive to salicylates lack the ability to metabolize and excrete salicylates.\nSalicylate sensitivity is thought to be caused by an excessive build-up of leukotrienes in the body.\nIt is also more common in individuals who suffer from asthma.</string>
     <string name="string_histamine_info">Histamine is a chemical in the body that releases stomach acid and communicates messages with the brain.\n\nA histamine intolerance is a sign that an individual is overproducing histamine, causing an adverse reaction to bodily functions.\n\nFortunately histamine levels can be managed with a careful diet.</string>
     <string name="gas">Gas</string>
+    <string name="no_food_elim">Looks like there are no food\nelimination diets added</string>
+    <string name="add_favourites">Add to Favourites</string>
+    <string name="additional_notes">Additional Notes?</string>
 
 </resources>

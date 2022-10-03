@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
+        android:layout_gravity="center"
         android:background="@drawable/rounded_square_light_cream_large_two"
         android:padding="5dp"
         android:elevation="5dp">

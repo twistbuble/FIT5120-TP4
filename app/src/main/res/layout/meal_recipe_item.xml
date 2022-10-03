@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="340dp"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_gravity="center"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/ll_recommended_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:background="@drawable/left_rounded_rectangle_pumpkin_orange_large">
+
+                <RelativeLayout
+                    android:id="@+id/rl_recommended_recipe_image"
+                    android:layout_width="115dp"
+                    android:layout_height="115dp"
+                    android:layout_gravity="center"
+                    android:background="">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_recommended_recipe_heart"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/circle_white_small"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/white_heart_icon"/>
+                            <!--src="@drawable/red_heart_icon-->
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_recommended_recipe_text"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_recommended_recipe"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="-135dp"
+                android:background="@drawable/white_circle_small"
+                android:padding="5dp">
+                <!--@drawable/circle_green_small-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:src= ""/>
+                    <!--src=thumbsup_icon-->
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="-30dp"
+            android:background="@drawable/circle_white_small"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/arrow_icon" />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+

@@ -9,23 +9,47 @@
     android:padding="15dp"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_navigation_home_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/navigation_menu_icon">
+
+            </ImageView>
+        </RelativeLayout>
+    </LinearLayout>
 
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
         android:elevation="5dp"
+        android:layout_gravity="center"
         android:background="@drawable/rounded_rectangle_cream_small"
         android:padding="5dp">
 
         <RelativeLayout
+            android:id="@+id/rl_child_user_page"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_rectangle_light_green_small"
             android:padding="5dp">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:orientation="horizontal"
@@ -49,7 +73,7 @@
                 </RelativeLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginStart="50dp"
@@ -60,7 +84,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginStart="5dp"
                         android:text="@string/home_child_name"
                         android:textColor="@color/black"
                         android:textSize="18sp"
@@ -78,7 +101,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginStart="5dp"
                         android:text="@string/home_child_age"
                         android:textColor="@color/black"
                         android:textSize="18sp"
@@ -91,26 +113,27 @@
 
 
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:id="@+id/rl_food_elim_page"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:layout_marginTop="5dp"
-        android:elevation="5dp"
+        android:layout_gravity="center"
         android:background="@drawable/rounded_rectangle_cream_small"
         android:padding="5dp">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:background="@drawable/rounded_rectangle_baby_blue_medium"
+            android:gravity="center"
+            android:padding="10dp"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="30dp"
                 android:layout_marginEnd="50dp"
                 android:orientation="vertical">
 
@@ -180,7 +203,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="30dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -214,13 +237,17 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical"
-        android:layout_marginTop="15dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:background="@drawable/rounded_square_light_cream_large_one">
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_square_light_cream_large_one"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -232,7 +259,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginEnd="15dp"
-                android:elevation="5dp"
                 android:background="@drawable/grid_square_one">
 
                 <LinearLayout
@@ -275,7 +301,6 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:elevation="5dp"
                 android:layout_marginEnd="15dp"
                 android:layout_weight="1"
                 android:background="@drawable/grid_square_two">
@@ -321,9 +346,7 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:elevation="5dp"
                 android:layout_weight="1"
-
                 android:background="@drawable/grid_square_six">
 
                 <LinearLayout
@@ -375,7 +398,7 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:elevation="5dp"
+
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginBottom="5dp"
@@ -422,7 +445,6 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:elevation="5dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginTop="5dp"
                 android:layout_weight="1"
@@ -469,7 +491,6 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:elevation="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/grid_square_three">
@@ -517,8 +538,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -526,7 +546,6 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="15dp"
                 android:layout_marginTop="5dp"
-                android:elevation="5dp"
                 android:background="@drawable/grid_square_seven">
 
                 <LinearLayout
@@ -569,7 +588,6 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:elevation="5dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginTop="5dp"
                 android:layout_weight="1"
@@ -619,7 +637,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginTop="5dp"
-                android:elevation="5dp"
                 android:background="@drawable/grid_square_four">
 
                 <LinearLayout
@@ -660,5 +677,6 @@
             </RelativeLayout>
         </LinearLayout>
 
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

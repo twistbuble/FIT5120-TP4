@@ -5,13 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class FoodDiaryActivity extends AppCompatActivity {
 
     private TextView todayDate, mealName, mealTime;
-    private RelativeLayout calenderButton, addFood;
+    private RelativeLayout calenderButton, navigationFoodDiary;
+    private LinearLayout addFood;
     private ImageView timeIcon;
 
     @Override
@@ -22,7 +24,8 @@ public class FoodDiaryActivity extends AppCompatActivity {
         // activity_food_diary.xml
         todayDate = findViewById(R.id.tv_today_date);
         calenderButton = findViewById(R.id.rl_calender_button);
-        addFood = findViewById(R.id.rl_add_food);
+        addFood = findViewById(R.id.ll_add_food);
+        navigationFoodDiary = findViewById(R.id.rl_navigation_food_diary);
 
         // meal_item.xml
         timeIcon = findViewById(R.id.iv_time_icon);

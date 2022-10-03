@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -11,8 +12,10 @@ import java.util.ArrayList;
 public class FoodIntoleranceInformationActivity extends AppCompatActivity {
 
     private TextView foodIntoleranceItem, foodIntoleranceText, symptomOne, symptomTwo, symptomThree, symptomFour, symptomFive, symptomSix, foodOne, foodTwo, foodThree, foodFour, foodFive;
+    private RelativeLayout foodIntoleranceBack;
 //    private Arraylist dairySymptomsList, dairyFoodsList,glutenSymptomsList, glutenFoodsList, soySymptomsList, soyFoodsList, eggsSymptomsList, eggsFoodList, fructoseSymptomsList, fructoseFoodsList, fodmapsSymptomsList, fodmapsFoodsList, salicylatesSymptomsList, salicylatesFoodsList, histamineSymptomsList, histamineFoodsList;
     private String dairyText = "@string/string_dairy_info", glutenText = "@string/string_gluten_info", soyText = "@string/string_soy_info", eggsText = "@string/string_eggs_info", fructoseText = "@string/string_fructose_info", fodmapsText = "@string/string_fodmaps_info", salicylatesText = "@string/string_salicylates_info", histamineText = "@string/string_histamine_info",
+
     /*symptoms*/
             dairySymptomsList[] = new String[]{"Abdominal Pain", "Bloating", "Diarrhoea", "Gas", "Nausea", "Indigestion"},
             glutenSymptomsList[] = new String[]{"Abdominal Pain", "Bloating", "Diarrhoea", "Headaches", "Nausea", "Eczema"},
@@ -51,7 +54,7 @@ public class FoodIntoleranceInformationActivity extends AppCompatActivity {
         foodThree = findViewById(R.id.tv_common_foods_three);
         foodFour = findViewById(R.id.tv_common_foods_four);
         foodFive = findViewById(R.id.tv_common_foods_five);
-
+        foodIntoleranceBack = findViewById(R.id.rl_food_intol_info_back);
 
     }
 }

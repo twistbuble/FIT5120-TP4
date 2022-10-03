@@ -15,20 +15,13 @@
         android:orientation="vertical">
 
         <RelativeLayout
-            android:id="@+id/rl_food_info_back"
+            android:id="@+id/rl_food_intol_info_back"
             android:layout_width="wrap_content"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="55dp"
             android:layout_height="wrap_content"
             android:elevation="5dp"
-            android:background="@drawable/rounded_rectangle_grey_small">
+            android:background="@drawable/back_button_icon">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="@string/back"
-                android:textColor="@color/white"
-                android:textSize="12sp"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -42,47 +35,70 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@drawable/rounded_square_lime_green_large"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:padding="20dp">
 
-                <RelativeLayout
-                    android:layout_width="95dp"
-                    android:layout_height="95dp"
-                    android:layout_marginTop="42dp"
-                    android:background="@drawable/swamp_green_square_transparent"
-                    android:padding="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
-                        android:src="@drawable/dairy_icon">
-                    </ImageView>
-                </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="45dp"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/swamp_green_square_transparent"
+                        android:padding="5dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/dairy_icon"/>
+                    </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="6">
+
+                            <TextView
+                                android:id="@+id/tv_food_intolerance_item"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:text="@string/string_food_intolerance_item"
+                                android:textColor="@color/olive_green"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#c0c0c0" />
 
                 <LinearLayout
-                    android:layout_width="190dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/tv_food_intolerance_item"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/string_food_intolerance_item"
-                        android:textColor="@color/olive_green"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:layout_marginTop="4dp"
-                        android:layout_marginBottom="4dp"
-                        android:background="#c0c0c0" />
+
+
 
                     <TextView
                         android:id="@+id/tv_food_intolerance_text"
@@ -92,7 +108,7 @@
                         android:layout_marginTop="5dp"
                         android:text="@string/string_dairy_info"
                         android:textColor="@color/olive_green"
-                        android:textSize="13sp"/>
+                        android:textSize="13sp" />
                 </LinearLayout>
 
 

@@ -31,15 +31,14 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:elevation="5dp"
+            android:layout_marginTop="25dp"
             android:background="@drawable/rounded_rectangle_cream_small"
             android:padding="5dp">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@drawable/rounded_rectangle_pumpkin_orange"
                 android:orientation="horizontal">
@@ -50,8 +49,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="20dp"
                     android:background="@drawable/sample_recipe_image_round"
-                    android:elevation="5dp">
-                </ImageView>
+                    android:elevation="5dp" />
 
                 <TextView
                     android:id="@+id/tv_child_name_home"
@@ -72,34 +70,38 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="25dp"
             android:orientation="horizontal">
 
             <RelativeLayout
-                android:id="@+id/rl_recommended_meal"
+                android:id="@+id/rl_is_recommended_meal"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="15dp"
-                android:elevation="5dp"
+                android:gravity="center"
                 android:layout_weight="1"
                 android:background="@drawable/rounded_rectangle_white_small">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/recommended"
+                        android:textColor="@color/olive_green"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="5dp"
-                    android:src="@drawable/thumbsup_icon">
-                </ImageView>
+                    android:src="@drawable/thumbsup_icon"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="55dp"
-                    android:text="@string/recommended"
-                    android:textColor="@color/olive_green"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
 
             </RelativeLayout>
 
@@ -107,26 +109,31 @@
                 android:id="@+id/rl_add_meal_favourites"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:elevation="5dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center"
                 android:layout_weight="1"
                 android:background="@drawable/rounded_rectangle_white_small">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_favourites"
+                        android:textColor="@color/olive_green"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="10dp"
-                    android:src="@drawable/red_heart_icon">
-                </ImageView>
+                    android:src="@drawable/red_heart_icon"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="40dp"
-                    android:textColor="@color/olive_green"
-                    android:text="Add to Favourites"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
 
             </RelativeLayout>
 
@@ -143,7 +150,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:elevation="5dp"
+            android:layout_gravity="center"
             android:background="@drawable/rounded_square_light_cream_large_one"
             android:padding="5dp">
 
@@ -189,16 +196,15 @@
         </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
-        android:elevation="5dp"
         android:background="@drawable/rounded_square_light_cream_large_one"
         android:padding="5dp">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/rounded_rectangle_purple_extra_large"
             android:orientation="vertical"

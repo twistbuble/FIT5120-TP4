@@ -13,7 +13,7 @@
     <color name="olive_green">#0B413F</color>
     <color name="light_green">#78B073</color>
     <color name="orange">#FF7A00</color>
-    <color name="pumpkin_orange">#D37F31</color>
+    <color name="pumpkin_orange">#E77710</color>
     <color name="pastel_orange">#E79952</color>
     <color name="light_blue">#589BFF</color>
     <color name="teal">#65B1AF</color>
@@ -39,4 +39,6 @@
     <color name="aquamarine">#7BD8D2</color>
     <color name="apricot">#F1AC6C</color>
     <color name="burgundy">#CE6565</color>
+    <color name="pale_green">#74A1A0</color>
+
 </resources>
