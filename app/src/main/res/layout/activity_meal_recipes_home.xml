@@ -51,18 +51,53 @@
                     android:background="@drawable/sample_recipe_image_round"
                     android:elevation="5dp" />
 
-                <TextView
-                    android:id="@+id/tv_child_name_home"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
-                    android:gravity="center"
-                    android:text="@string/sample_recipe_title"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_child_name_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:text="@string/sample_recipe_title"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="29dp"
+                        android:layout_marginStart="15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/star_icon" />
+
+                        <TextView
+                            android:id="@+id/tv_recipe_rating_score_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="15dp"
+                            android:gravity="center"
+                            android:text="4.5"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
 
             </LinearLayout>
         </RelativeLayout>
@@ -74,7 +109,7 @@
             android:orientation="horizontal">
 
             <RelativeLayout
-                android:id="@+id/rl_is_recommended_meal"
+                android:id="@+id/rl_rate_recipe"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="15dp"
@@ -90,7 +125,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/recommended"
+                        android:text="Give a Rating"
                         android:textColor="@color/olive_green"
                         android:textSize="14sp"
                         android:textStyle="bold" />
@@ -98,9 +133,10 @@
                 </RelativeLayout>
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/thumbsup_icon"/>
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/star_icon" />
 
 
             </RelativeLayout>
@@ -132,7 +168,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:src="@drawable/red_heart_icon"/>
+                    android:src="@drawable/red_heart_icon" />
 
 
             </RelativeLayout>

@@ -6,4 +6,10 @@
     <solid android:color="@color/pumpkin_orange" />
     <corners android:radius="30dp" />
 
+    <gradient
+        android:startColor = "#FF9900"
+        android:endColor = "#E77710"
+        android:angle = "45"
+        android:type="linear" />
+
 </shape>
