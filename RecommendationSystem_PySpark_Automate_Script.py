@@ -36,7 +36,7 @@ sqlEngine = create_engine('mysql+pymysql://root:5177FC9E-8C6B@54.88.63.24:3306/f
 
 # ### Obtaining user ratings from Database
 
-# In[16]:
+# In[3]:
 
 
 # Connecting to database
@@ -51,7 +51,7 @@ dbConnection.close()
 
 # ### Formatting and transform Panda Dataframe to Spark Dataframe
 
-# In[17]:
+# In[4]:
 
 
 # turn pandas df into spark df for training
@@ -62,15 +62,15 @@ test_user_df = test_user_df \
     .withColumn('user_id', test_user_df['user_id'].cast(IntegerType()))
 
 
-# In[18]:
+# In[5]:
 
 
-test_user_df.show()
+# test_user_df.show()
 
 
 # ### Model Training
 
-# In[7]:
+# In[6]:
 
 
 # train / test split
@@ -84,7 +84,7 @@ model = als.fit(train)
 
 # #### Model Performance
 
-# In[8]:
+# In[7]:
 
 
 # apply model to test
@@ -100,25 +100,19 @@ model = als.fit(train)
 
 # ### Extracting Features (Pandas)
 
-# In[9]:
+# In[8]:
 
 
 userRecs = model.recommendForAllUsers(50)
 
 
-# In[10]:
+# In[9]:
 
 
 pd.set_option('display.max_colwidth', None)
 user_predictions = userRecs.toPandas()
 
 user_predictions['user_id'] = user_predictions['user_id'].astype(str)
-
-
-# In[11]:
-
-
-user_predictions.head(10)
 
 
 # ### Extract Recommendations
@@ -136,7 +130,7 @@ user_predictions.head(10)
 # 
 # <b>num_of_recommendations</b><br> being the number of recommendations you wish to output<br>
 
-# In[12]:
+# In[11]:
 
 
 def extractRecommendations(ratings_df, predictions_df, user_id, num_of_recommendations):
@@ -151,7 +145,7 @@ def extractRecommendations(ratings_df, predictions_df, user_id, num_of_recommend
     
 
 
-# In[13]:
+# In[12]:
 
 
 user_list = []
@@ -162,20 +156,29 @@ recommended_recipes = []
 for user in user_list:
     recommended_recipes.append(extractRecommendations(panda_df, user_predictions, user, 10))
     
-output_df = pd.DataFrame({'User_ID': user_list, 'Recommendations': recommended_recipes})
-output_df['Recommendations'] = output_df['Recommendations'].apply(lambda x: ', '.join(map(str, x)))
+output_df = pd.DataFrame({'user_id': user_list, 'recommendations': recommended_recipes})
+
+output_df['recommendations'] = output_df['recommendations'].apply(lambda x: ', '.join(map(str, x)))
 
 
 # ### Pushing new recommendations to Database
 
-# In[15]:
+# In[13]:
 
 
 dbConnection = sqlEngine.connect()
 
 print("Database connection established")
 
-frame = output_df.to_sql('User_Recommendations', dbConnection, if_exists='replace', index=False)
+output_df.to_sql('temp_table', dbConnection, if_exists='replace', index=False)
+
+sql = """INSERT  User_Recommendations
+            SELECT  *
+            FROM    temp_table t
+            ON DUPLICATE KEY UPDATE
+                    recommendations = t.recommendations"""
+
+dbConnection.execute(sql)
 
 print("Database has been updated successfully")
 
